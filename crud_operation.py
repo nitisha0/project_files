@@ -1,6 +1,6 @@
-import cx_Oracle as niti
+import cx_Oracle as dbms
 
-db=niti.connect("scott/niti123@orclpdb")
+db=dbms.connect("scott/niti123@orclpdb")
 st=db.cursor()
 try:
     st.execute("create sequence idgen")
